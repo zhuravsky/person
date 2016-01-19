@@ -1,30 +1,29 @@
 (function ($) {
   $(function () {
 
-      $('.header__navicon').click( function() {
-          var overlay = $('.overlay');
-          $(this).toggleClass('header__navicon_close');
-          $('.nav').toggleClass('nav_opened');
-          overlay.toggleClass('overlay-on');
+    $('.header__navicon').click( function() {
+        var overlay = $('.overlay');
+        $(this).toggleClass('header__navicon_close');
+        $('.nav').toggleClass('nav_opened');
+        overlay.toggleClass('overlay-on');
 
-          if (overlay.hasClass('overlay-on')) {
-              overlay.show().fadeTo(300,1).bind('touchmove', function(e) {
-                  e.preventDefault();
-              });
-          } else {
-              overlay.fadeTo(300,0).hide(300).unbind('touchmove');
-          }
-
-      });
+        if (overlay.hasClass('overlay-on')) {
+            overlay.show().fadeTo(300,1).bind('touchmove', function(e) {
+                e.preventDefault();
+            });
+        } else {
+            overlay.fadeTo(300,0).hide(300).unbind('touchmove');
+        }
+    });
 
     $('.news-detail-arrow').hover(function () {
-      var el = $(this).find('.popover-short-info');
-      el.addClass('popover-short-info_active');
-    },function () {
-      var el = $(this).find('.popover-short-info');
-      el.removeClass('popover-short-info_active');
+        var el = $(this).find('.popover-short-info');
+        el.addClass('popover-short-info_active');
+      },function () {
+        var el = $(this).find('.popover-short-info');
+        el.removeClass('popover-short-info_active');
+      });
     });
-  });
 
     $(document).ready(function() {
         $("#carousel-box").swiperight(function() {
@@ -56,6 +55,7 @@
             transition: function(url){ window.location.href = url; }
         });
     });
+
   $(document).ready(function(){
     if (window.outerWidth < 720) {
       var container = $('body');
@@ -63,17 +63,13 @@
       var viewportHeight = window.innerHeight;
       var galleryHeight = viewportHeight - 455;
 
-      container.css({
-        minHeight : viewportHeight
-      });
+      gallery.parent().siblings('.push').hide();
 
-      gallery.css({
-        minHeight : galleryHeight
-      });
+      container.css({minHeight : viewportHeight});
+
+      gallery.css({minHeight : galleryHeight});
     }
   });
-
-
 })(jQuery);
 
 
