@@ -39,8 +39,8 @@
         $(".animsition").animsition({
             inClass: 'fade-in',
             outClass: 'fade-out',
-            inDuration: 800,
-            outDuration: 800,
+            inDuration: 500,
+            outDuration: 500,
             linkElement: 'a:not([target="_blank"]):not([href^=#])',
             loading: true,
             loadingParentElement: 'body',
