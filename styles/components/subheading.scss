@@ -1,0 +1,17 @@
+.subheading {
+  font-size: $font-m;
+  font-weight: normal;
+  margin: 2rem 0 1rem;
+  color: #1A3951;
+  transition: .3s color ease;
+  text-transform: uppercase;
+
+
+
+
+  &_bold {
+    font-weight: bold;
+  }
+
+}
+

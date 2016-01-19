@@ -1,0 +1,91 @@
+.contacts {
+  min-height: 900px;
+  &__form {
+    position: relative;
+    background: #fff;
+    float: right;
+    border: 1px solid #E7AF62;
+    padding: 0 2rem 2rem;
+    margin-top: 4rem;
+    width: 456px;
+  }
+
+  &__msg-sent {
+    background-color:rgba(27,58,81,0.7);
+    width: 100%;
+    height: 6rem;
+    color: #fff;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    text-align: center;
+    line-height: 6rem;
+    font-size: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: .3s all ease;
+
+    &_on {
+      opacity: 1;
+    }
+  }
+
+  .heading {
+    margin-top: 2rem;
+  }
+
+  p, a {
+    color: #5F5F63;
+    font-size: 16px;
+
+    & + p {
+      margin-top: 1rem;
+    }
+  }
+
+  &__error {
+    color: #FF6060;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+  }
+
+  &__textbox {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    transition: .3s all ease;
+
+    &_error {
+      border-color: #FF6060;
+    }
+
+    &:hover {
+      border-color: #E7B166;
+    }
+
+    &:focus {
+      border-color: #E7B167;
+    }
+
+    &_msg {
+      height: 150px;
+      resize: none;
+      padding: 1rem;
+    }
+  }
+
+  &__label {
+    color: #5F5F63;
+    display: block;
+    position: relative;
+
+    .contacts__textbox + & {
+      margin-top: 1rem;
+    }
+  }
+
+}

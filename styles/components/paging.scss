@@ -1,0 +1,56 @@
+.paging {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  &__item {
+    text-align: center;
+
+    & + & {
+      margin-left: 2rem;
+    }
+  }
+  &__href {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    box-sizing: border-box;
+    border: 1px solid #E7AF63;
+    color: #1B3A51;
+    font-size: 1em;
+    transition: .3s all ease;
+    & > .fa {
+      font-size: $font-xl;
+    }
+    &:hover {
+      border-color: #C78020;
+      color: #E7B166;
+    }
+
+    &_active {
+      color: #fff;
+      background: #E7AF63;
+      &:hover {
+        color: #fff;
+        border-color: #E7AF63;
+      }
+    }
+
+  }
+}
+
+.pagination_small {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .pagination {
+    &_small {
+      display: block;
+    }
+
+    &_big {
+      display: none;
+    }
+  }
+}

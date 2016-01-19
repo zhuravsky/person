@@ -1,0 +1,22 @@
+.footer {
+  background-color: #EDEDEF;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  &__copyright {
+    color: #656569;
+    font-family: inherit;
+    margin-top: 1rem;
+    font-size: 1em;
+
+    i {
+      margin-right: .5rem;
+    }
+  }
+}
+.footer, .push {
+  height: 9rem;
+}
+

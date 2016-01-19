@@ -1,0 +1,26 @@
+.profile {
+  display: flex;
+  align-items: flex-start;
+  &__name {
+    font-size: 32px;
+    color: #1A3951;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: normal;
+    padding-top: 1rem;
+    line-height: 120%;
+  }
+
+  &__info {
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    color: #5F5F63;
+  }
+
+  .subheading {
+    margin-bottom: 2rem;
+  }
+}

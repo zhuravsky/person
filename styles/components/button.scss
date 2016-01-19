@@ -1,0 +1,22 @@
+
+.button {
+  display: block;
+  height: 4rem;
+  padding: 0 2rem;
+  background-color: #EDEDEF;
+  color: #1A3951;
+  font-size: 16px;
+  border: none;
+  transition: .3s all ease;
+  outline: none;
+
+  &_contacts {
+    float: right;
+    margin-top: 1.5rem;
+  }
+
+  &:hover {
+    background-color: #E7AF63;
+    color: #fff;
+  }
+}

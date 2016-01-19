@@ -1,0 +1,22 @@
+.icon {
+  position: relative;
+  display: inline-block;
+  background-image: url('../img/arrow.png');
+  &_back {
+    background-position: 0 89px;
+    width: 20px;
+    height: 16px;
+    margin-bottom: -2px;
+  }
+  &_arrow-left {
+    background-position: 0 0;
+    width: 30px;
+    height: 53px;
+
+  }
+  &_arrow-right {
+    width: 30px;
+    height: 53px;
+    background-position: 30px 0;
+  }
+}

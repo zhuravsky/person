@@ -1,0 +1,43 @@
+.greeting {
+  flex-wrap: nowrap;
+  background: url("../img/main-photo.jpg") no-repeat right  0 / cover;
+  height: 612px;
+  display: flex;
+  width: 100%;
+  margin-top: -6rem;
+  position: relative;
+
+
+  &__text {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+
+
+    h1, h2 {
+      font-weight: lighter;
+    }
+  }
+
+  &__name {
+    text-align: right;
+    font-size: 6vw;
+    line-height: 120%;
+    font-family: "PFDinTextPro-thin";
+  }
+
+  &__descr{
+    text-align: right;
+    font-size: 2vw;
+    line-height: 52px;
+    font-family: "PFDinTextPro-thin";
+  }
+}
+
+@media (max-width: 1680px) {
+  .greeting {
+    background-position: 55% 0;
+  }
+}

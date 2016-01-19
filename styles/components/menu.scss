@@ -1,0 +1,45 @@
+.menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &__item {
+    & + & {
+      margin-left: 1rem;
+      white-space: nowrap;
+      &:before {
+        content: '/';
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__link {
+    color: #1A3951;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: $font-xs;
+
+    &:hover {
+      color: #E7B166;
+    }
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .menu{
+    &__link {
+      font-size: $font-s;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu{
+    &__link {
+      font-size: 1em;
+    }
+  }
+}

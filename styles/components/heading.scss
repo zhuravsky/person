@@ -1,0 +1,17 @@
+.heading {
+  font-size: $font-xxl;
+  line-height: 120%;
+  margin: 4rem 0 2rem;
+  color: #1A3951;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+
+  &_link {
+   &:hover {
+     color: #E7B166;
+   }
+  }
+}
+
+

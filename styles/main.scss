@@ -1,0 +1,54 @@
+@import "components/variables";
+@import "components/normalize";
+@import "components/font-awesome/font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic');
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+html, body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'PFDinTextPro-thin';
+  src: url('../fonts/PFDinTextPro-thin.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@import "components/carousel";
+@import "components/header";
+@import "components/grid";
+@import "components/content";
+@import "components/button";
+@import "components/page-container";
+@import "components/nav";
+@import "components/subheading";
+@import "components/heading";
+@import "components/menu";
+@import "components/footer";
+@import "components/text-container";
+@import "components/greeting";
+@import "components/paging";
+@import "components/box-items";
+@import "components/breadcrumbs";
+@import "components/contacts";
+@import "components/map";
+@import "components/media";
+@import "components/profile";
+@import "components/news-detail";
+@import "components/activity";
+@import "components/popover";
+@import "components/icon";
+
+@import "mobile";
+
