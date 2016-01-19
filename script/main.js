@@ -56,6 +56,22 @@
             transition: function(url){ window.location.href = url; }
         });
     });
+  $(document).ready(function(){
+    if (window.outerWidth < 720) {
+      var container = $('body');
+      var gallery = $('.content_gallery');
+      var viewportHeight = window.innerHeight;
+      var galleryHeight = viewportHeight - 455;
+
+      container.css({
+        minHeight : viewportHeight
+      });
+
+      gallery.css({
+        minHeight : galleryHeight
+      });
+    }
+  });
 
 
 })(jQuery);

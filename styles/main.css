@@ -3475,7 +3475,7 @@ tbody.collapse.in {
     content: '';
     width: 100%;
     height: 4rem;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 80%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 50%);
     bottom: 0;
     left: 0; }
   .popover-short-info_left {
@@ -3526,7 +3526,7 @@ tbody.collapse.in {
   .content_gallery {
     height: auto;
     margin-bottom: 4rem;
-    display: block; }
+    display: flex; }
     .content_gallery .box-items__text {
       margin: 0;
       border: none; }
@@ -3649,7 +3649,8 @@ tbody.collapse.in {
       .media__item_gallery {
         height: auto; }
     .media__img img {
-      display: block; }
+      display: block;
+      width: 100%; }
     .media__text {
       float: none;
       display: block;
