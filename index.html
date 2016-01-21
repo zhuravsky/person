@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="script/main.js"></script>
 </head>
-<body class="animsition">
+<body>
     <div class="page-container">
             <header class="header header_sticky" id="sticky-header">
                 <div class="content">
@@ -186,28 +186,6 @@
             </p>
         </div>
     </footer>
-
-    <script>
-        function stickHeader() {
-            var header = document.getElementById('sticky-header');
-
-            if (window.window.pageYOffset > 80) {
-                header.classList.add('header_is-sticky');
-            }
-            else {
-                header.classList.remove('header_is-sticky');
-            }
-        }
-
-        window.onscroll = function () {
-            stickHeader();
-        }
-
-        stickHeader();
-
-    </script>
-
-
 
 </body>
 </html>

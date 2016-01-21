@@ -20,7 +20,25 @@
   }
 
   .greeting {
-    //display: none;
+    background: url("../img/greeting-bg-mobile.jpg") no-repeat center  0 / cover;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 888px;
+
+    &__text {
+      margin: 0 10% 4rem;
+    }
+
+    &__name {
+      font-size: 80px;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    &__descr {
+      text-align: center;
+      font-size: 26px;
+    }
   }
 
   .content {
@@ -142,8 +160,9 @@
 
   .header  {
     &_sticky {
-      //background-color: #1B3A51;
+      border: none;
     }
+
     /*&:before {
       content: '';
       position: fixed;
