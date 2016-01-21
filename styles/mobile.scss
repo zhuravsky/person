@@ -20,7 +20,7 @@
   }
 
   .greeting {
-    display: none;
+    //display: none;
   }
 
   .content {
@@ -135,14 +135,14 @@
   .header {
     &__link {
       flex-grow: 1;
-      opacity: 1;
+      //opacity: 1;
       width: 19rem;
     }
   }
 
   .header  {
     &_sticky {
-      background-color: #1B3A51;
+      //background-color: #1B3A51;
     }
     /*&:before {
       content: '';

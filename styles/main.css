@@ -3520,9 +3520,6 @@ tbody.collapse.in {
   .page-container {
     margin: 0 auto -17rem; }
 
-  .greeting {
-    display: none; }
-
   .content_gallery {
     height: auto;
     margin-bottom: 4rem;
@@ -3587,7 +3584,6 @@ tbody.collapse.in {
 
   .header__link {
     flex-grow: 1;
-    opacity: 1;
     width: 19rem; }
 
   .header {
@@ -3609,8 +3605,6 @@ tbody.collapse.in {
       z-index: 1;
       opacity: 1;
     }*/ }
-    .header_sticky {
-      background-color: #1B3A51; }
     .header__navicon {
       display: block; }
 
