@@ -51,6 +51,14 @@
   $(document).ready(function() {
     window.onscroll = function () {
       stickHeader();
+
+      var scrollTop = window.window.pageYOffset;
+      var parallax = scrollTop * 0.3;
+      console.log(parallax);
+
+      $('.greeting__parallax').css({
+        top: parallax
+      });
     };
 
     stickHeader();

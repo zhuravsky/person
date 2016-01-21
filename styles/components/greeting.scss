@@ -1,11 +1,20 @@
 .greeting {
   flex-wrap: nowrap;
-  background: url("../img/main-photo.jpg") no-repeat right  0 / cover;
   height: 612px;
   display: flex;
   width: 100%;
   margin-top: -6rem;
   position: relative;
+  overflow: hidden;
+
+  &__parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/main-photo.jpg") no-repeat right 0 / cover;
+    top: 0;
+    left:0;
+  }
 
 
   &__text {
@@ -14,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 15%;
+    position: relative;
 
 
     h1, h2 {
@@ -37,7 +47,7 @@
 }
 
 @media (max-width: 1680px) {
-  .greeting {
+  .greeting__parallax {
     background-position: 55% 0;
   }
 }

@@ -3026,18 +3026,26 @@ tbody.collapse.in {
 
 .greeting {
   flex-wrap: nowrap;
-  background: url("../img/main-photo.jpg") no-repeat right 0/cover;
   height: 612px;
   display: flex;
   width: 100%;
   margin-top: -6rem;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .greeting__parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/main-photo.jpg") no-repeat right 0/cover;
+    top: 0;
+    left: 0; }
   .greeting__text {
     display: flex;
     color: #fff;
     flex-direction: column;
     justify-content: center;
-    margin-left: 15%; }
+    margin-left: 15%;
+    position: relative; }
     .greeting__text h1, .greeting__text h2 {
       font-weight: lighter; }
   .greeting__name {
@@ -3052,7 +3060,7 @@ tbody.collapse.in {
     font-family: "PFDinTextPro-thin"; }
 
 @media (max-width: 1680px) {
-  .greeting {
+  .greeting__parallax {
     background-position: 55% 0; } }
 .paging {
   display: flex;
@@ -3521,10 +3529,11 @@ tbody.collapse.in {
     margin: 0 auto -17rem; }
 
   .greeting {
-    background: url("../img/greeting-bg-mobile.jpg") no-repeat center 0/cover;
     flex-direction: column;
     justify-content: flex-end;
     height: 888px; }
+    .greeting__parallax {
+      background: url("../img/greeting-bg-mobile.jpg") no-repeat center 0/cover; }
     .greeting__text {
       margin: 0 10% 4rem; }
     .greeting__name {

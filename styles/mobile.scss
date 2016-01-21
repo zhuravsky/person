@@ -20,10 +20,13 @@
   }
 
   .greeting {
-    background: url("../img/greeting-bg-mobile.jpg") no-repeat center  0 / cover;
     flex-direction: column;
     justify-content: flex-end;
     height: 888px;
+
+    &__parallax {
+      background: url("../img/greeting-bg-mobile.jpg") no-repeat center  0 / cover;
+    }
 
     &__text {
       margin: 0 10% 4rem;
